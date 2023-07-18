@@ -1,0 +1,157 @@
+{
+    "invoices": [
+        {
+            "client": {
+                "city": "NewCity",
+                "clientStatus": "active",
+                "email": "new@example.com",
+                "id": "10",
+                "name": "Aditya",
+                "state": "NY",
+                "street": "456 New Street",
+                "zip": "67890"
+            },
+            "createdAt": "2022-07-01",
+            "dueDate": "2022-07-31",
+            "id": "1",
+            "invoiceNumber": "12345",
+            "invoiceStatus": "draft",
+            "issueDate": "2022-07-01",
+            "lineItems": [
+                {
+                    "amount": 500,
+                    "description": "New Service #1",
+                    "id": "10",
+                    "quantity": 2
+                },
+                {
+                    "amount": 1000,
+                    "description": "New Service #2",
+                    "id": "20",
+                    "quantity": 2
+                }
+            ],
+            "notes": "New notes.",
+            "subject": "New Services",
+            "terms": "New terms."
+        },
+        {
+            "client": {
+                "city": "AnotherCity",
+                "clientStatus": "active",
+                "email": "another@example.com",
+                "id": "20",
+                "name": "Mohit",
+                "state": "CA",
+                "street": "789 Another Street",
+                "zip": "54321"
+            },
+            "createdAt": "2022-07-01",
+            "dueDate": "2022-07-06",
+            "id": "2",
+            "invoiceNumber": "12352",
+            "invoiceStatus": "draft",
+            "issueDate": "2022-07-08",
+            "lineItems": [
+                {
+                    "amount": 1500,
+                    "description": "Another Service #1",
+                    "id": "30",
+                    "quantity": 3
+                },
+                {
+                    "amount": 2000,
+                    "description": "Another Service #2",
+                    "id": "40",
+                    "quantity": 3
+                }
+            ],
+            "subject": "Another Services"
+        },
+        {
+            "client": {
+                "city": "PendingCity",
+                "clientStatus": "active",
+                "email": "pending@example.com",
+                "id": "30",
+                "name": "Animesh",
+                "state": "TX",
+                "street": "123 Pending Street",
+                "zip": "12345"
+            },
+            "createdAt": "2022-07-01",
+            "dueDate": "2022-10-06",
+            "id": "5",
+            "invoiceNumber": "12346",
+            "invoiceStatus": "paid",
+            "issueDate": "2022-07-01",
+            "lineItems": [
+                {
+                    "amount": 700,
+                    "description": "Pending Service #1",
+                    "id": "50",
+                    "quantity": 1
+                },
+                {
+                    "amount": 1500,
+                    "description": "Pending Service #2",
+                    "id": "60",
+                    "quantity": 1
+                }
+            ],
+            "subject": "Pending Services"
+        },
+        {
+            "client": {
+                "city": "NewCity",
+                "email": "new@example.com",
+                "id": "10",
+                "name": "Tuntun",
+                "state": "NY",
+                "street": "456 New Street",
+                "zip": "67890"
+            },
+            "createdAt": "2022-07-01",
+            "dueDate": "2022-6-06",
+            "id": "7",
+            "invoiceNumber": "12347",
+            "invoiceStatus": "sent",
+            "issueDate": "2022-07-01",
+            "lineItems": [
+                {
+                    "amount": 5000000,
+                    "description": "Website Design",
+                    "id": "4",
+                    "quantity": 1
+                }
+            ],
+            "subject": "Website"
+        },
+        {
+            "client": {
+                "city": "NewCity",
+                "email": "new@example.com",
+                "id": "10",
+                "name": "Harsh",
+                "state": "NY",
+                "street": "456 New Street",
+                "zip": "67890"
+            },
+            "createdAt": "2022-07-06",
+            "dueDate": "2022-10-06",
+            "id": "5",
+            "invoiceNumber": "12348",
+            "invoiceStatus": "sent",
+            "issueDate": "2022-07-06",
+            "lineItems": [
+                {
+                    "amount": 1000000,
+                    "description": "Website Development",
+                    "id": "1",
+                    "quantity": 1
+                }
+            ],
+            "subject": "Website"
+        }
+    ]
+}
