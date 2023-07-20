@@ -1,18 +1,10 @@
-<script lang="ts">
+<script>
+  import { invoices, loadInvoices } from '$lib/stores/InvoiceStore';
+  import { onMount } from 'svelte';
   import CircledAmount from '$lib/components/CircledAmount.svelte';
   import Search from '$lib/components/Search.svelte';
-  import { invoices, loadInvoices } from '$lib/stores/InvoiceStore';
-  import { formatInRupees, sumInvoices } from '$lib/utils/moneyHelper';
-  import { onMount } from 'svelte';
   import InvoiceRow from './InvoiceRow.svelte';
-
-  // No-op to prevent linter from removing import
-  CircledAmount && CircledAmount;
-  Search && Search;
-  InvoiceRow && InvoiceRow;
-  invoices && invoices;
-  formatInRupees && formatInRupees;
-  sumInvoices && sumInvoices;
+  import { formatInRupees, sumInvoices } from '$lib/utils/moneyHelpers';
 
   onMount(() => {
     loadInvoices();
@@ -52,12 +44,14 @@
   </div>
 
   <!-- invoices -->
-  {#each $invoices as invoice}
-    <InvoiceRow {invoice} />
-  {/each}
+  <div class="flex flex-col-reverse">
+    {#each $invoices as invoice}
+      <InvoiceRow {invoice} />
+    {/each}
+  </div>
 </div>
 
-<CircledAmount label="Total" amount={formatInRupees(sumInvoices($invoices))} />
+<CircledAmount label="Total" amount={formatInRupees(sumInvoices($invoices))}} />
 
 <style lang="postcss">
   .table-header h3 {
