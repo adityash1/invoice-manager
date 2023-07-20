@@ -48,7 +48,7 @@
   <div class="clientName truncate whitespace-nowrap text-base font-bold lg:text-xl">
     {invoice.client.name}
   </div>
-  <div class="amount text-right font-mono text-sm font-bold lg:text-lg">
+  <div class="amount font-mono text-right text-sm font-bold lg:text-lg">
     {formatInRupees(sumLineItems(invoice.lineItems))}
   </div>
   <div class="center viewButton hidden text-sm lg:flex lg:text-lg">

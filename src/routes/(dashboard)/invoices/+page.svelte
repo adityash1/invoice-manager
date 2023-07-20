@@ -51,7 +51,7 @@
   </div>
 </div>
 
-<CircledAmount label="Total" amount={formatInRupees(sumInvoices($invoices))}} />
+<CircledAmount label="Total" amount={formatInRupees(sumInvoices($invoices))} />
 
 <style lang="postcss">
   .table-header h3 {
